@@ -1,0 +1,6 @@
+; Bookworm's mariadb-client defaults to requiring TLS on the wire, but the
+; MariaDB server in our docker-compose runs without SSL. Without this both
+; bin/storage dump (which shells out to mysqldump) and the entrypoint's
+; wait-for-mysql loop would fail with error 2026 "SSL is required".
+[client]
+ssl=0

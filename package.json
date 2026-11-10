@@ -1,0 +1,37 @@
+{
+  "name": "agent-forge",
+  "version": "1.20261111.1001220",
+  "description": "Agent skill that sets up and drives an issue tracker for coding agents (Claude Code, Codex CLI). Connect an existing service or spin up a local Phorge with Docker.",
+  "type": "module",
+  "bin": {
+    "agent-forge": "bin/agent-forge.js"
+  },
+  "files": [
+    "bin/",
+    "skills/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "bump": "node tools/bump-version.js",
+    "test": "node tools/smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "phorge",
+    "phabricator",
+    "issue-tracker"
+  ],
+  "author": "Yuan-Yi Chang <changyy.csie@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changyy/agent-forge.git"
+  },
+  "homepage": "https://github.com/changyy/agent-forge"
+}
